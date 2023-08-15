@@ -6,8 +6,8 @@ module.exports = {
       colors : {
         "beige" : "#DCC1AB",
         "green" : "#1B5B31",
-        "grey": "F5F0EC",
-        "black": "111111",
+        "grey": "#F5F0EC",
+        "black": "#111111",
       },
       fontFamily : {
         sans : ['Montserrat', 'sans-serif'],
