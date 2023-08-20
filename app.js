@@ -1,11 +1,11 @@
-import {Splide} from '/assets/splide-4.1.3/dist/js/splide.min.js'; 
+const myElement = document.getElementById("myElement");
 
-document.addEventListener('DOMContentLoaded', function() {
-  new Splide('.splide', {
-    type: 'loop', // Enable continuous looping
-    autoplay: true,
-    interval: 5000, // Set your desired autoplay interval in milliseconds
-  }).mount();
+// Define the animation
+anime({
+  targets: myElement,
+  opacity: 0.5,
+  scale: 1.2,
+  duration: 1000, // Animation duration in milliseconds
+  easing: "easeInOutQuad" // Animation easing function
 });
 
-  
