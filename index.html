@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>adRespect</title>
     <link href="/dist/output.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
+   
 </head>
 
 <body>
@@ -24,7 +26,7 @@
                 </nav>
             </header>
 
-            <div class="flex bg-beige w-full lg:gap-16 ">
+            <div class="flex bg-beige w-full h-screen lg:gap-16 ">
                 <div
                     class="basis-1/2 pr-4 lg:pr-0  pl-4 pt-24 lg:pt-0 lg:pl-20 flex-col justify-center lg:flex w-full ">
                     <article class="lg:w-10/12 text-black flex flex-col justify-center">
@@ -49,15 +51,36 @@
                         </div>
                     </article>
                 </div>
-                <aside class="hidden md:flex md:basis-1/2">
-                    <img class="object-cover" src="/img/photo.png" alt="landscape">
+                <aside class="hidden md:flex md:basis-1/2 min-h-screen">
+                    <div id="default-carousel" class="relative w-full h-full" data-carousel="slide">
+                        <div class="relative h-full overflow-hidden rounded-lg ">
+                            
+                            <div class="hidden duration-700 ease-in-out h-full" data-carousel-item>
+                                <img src="/img/main-image.jpg"
+                                    class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-cover"
+                                    alt="...">
+                            </div>
+
+                            <div class="hidden duration-700 ease-in-out h-full" data-carousel-item>
+                                <img src="/img/Photo (2).png"
+                                    class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-cover"
+                                    alt="...">
+                            </div>
+                            
+                            <div class="hidden duration-700 ease-in-out h-full" data-carousel-item>
+                                <img src="/img/Photo (3).png"
+                                    class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-cover"
+                                    alt="...">
+                            </div>
+                            
+                        </div>
                 </aside>
             </div>
         </section>
 
         <section class="bg-grey w-full pt-20 lg:pt-32 pb-20 lg:pb-44">
             <article class="flex justify-center items-center w-full ">
-                <div class="mb-24 flex flex-col w-full md:w-9/12 pl-4 lg:pl-0 pr-4 lg:pr-0 ">
+                <div class="mb-24 flex flex-col md:w-9/12 pl-4 lg:pl-0 pr-4 lg:pr-0 ">
                     <p class="text-green text-xs mb-3 w-full lg:w-3/4">Oferta</p>
                     <h2 class="mb-8 font-sans font-medium text-3xl lg:text-5xl w-full lg:w-3/4">Działamy<span
                             class="italic">&nbsp;kompleksowo</span>
@@ -129,7 +152,9 @@
                         potrzeb każdego Klienta. Nasza specjalizacja to przestrzenie nowoczesne, które charakteryzuje
                         minimalizm, geometria i elegancka prostota. Tworzymy ogrody małoobsługowe, dostosowane do
                         współczesnego trybu życia.</p>
-                    <button class="w-48 h-12 border border-white rounded-full flex justify-center items-center gap-2 hover:bg-black hover:border-none">Poznaj nas bliżej <img src="/img/arrow-right-white.png" alt="arrow right"></button>
+                    <button
+                        class="w-48 h-12 border border-white rounded-full flex justify-center items-center gap-2 hover:bg-black hover:border-none">Poznaj
+                        nas bliżej <img src="/img/arrow-right-white.png" alt="arrow right"></button>
                 </article>
             </div>
         </section>
@@ -168,7 +193,9 @@
             </div>
 
             <div class="absolute z-50 flex justify-center items-center mt-72 w-full ">
-                <button class="px-8 py-2 rounded-full border border-black text-black flex justify-center items-center gap-2 hover:bg-beige">Rozwiń <img src="/img/arrow-down-black.png" alt="arrow down"></button>
+                <button
+                    class="px-8 py-2 rounded-full border border-black text-black flex justify-center items-center gap-2 hover:bg-beige">Rozwiń
+                    <img src="/img/arrow-down-black.png" alt="arrow down"></button>
             </div>
         </section>
 
@@ -182,7 +209,8 @@
                     <div
                         class="md:basis-1/2 basis-1/4 lg:pr-16 flex flex-col justify-center items-center md:items-start ">
                         <p>Śledź nasze <br> najnowsze realizacje!</p>
-                        <button class="bg-white text-green w-32 rounded-3xl py-2 mt-4 hover:bg-black hover:text-white">Instagram</button>
+                        <button
+                            class="bg-white text-green w-32 rounded-3xl py-2 mt-4 hover:bg-black hover:text-white">Instagram</button>
 
                     </div>
                 </div>
@@ -195,7 +223,9 @@
                     <div class="logo"><img src="/img/giarddesign.png" alt="logo"></div>
                     <div class="lg:flex items-center lg:gap-4 mt-8 lg:mt-0">
                         <p class="text-start">Daj znać, co możemy dla Ciebie zrobić!</p>
-                        <button class="bg-green rounded-3xl px-4 py-3 mt-6 lg:mt-0 hover:bg-grey hover:text-green">Skontaktuj się z nami</button>
+                        <button
+                            class="bg-green rounded-3xl px-4 py-3 mt-6 lg:mt-0 hover:bg-grey hover:text-green">Skontaktuj
+                            się z nami</button>
                     </div>
                 </div>
 
@@ -232,7 +262,8 @@
         </footer>
 
     </div>
-    <script src="./app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+
 </body>
 
 </html>
