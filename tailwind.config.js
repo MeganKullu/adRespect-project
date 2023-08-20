@@ -10,8 +10,8 @@ module.exports = {
         "black": "#111111",
       },
       fontFamily : {
-        sans : ['Montserrat', 'sans-serif'],
-        serif: ['Inter', 'serif'],
+        'sans' : ['Montserrat','sans-serif'],
+        'serif': ['Inter', 'serif'],
       }
     },
   },

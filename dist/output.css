@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@400;500&display=swap');
 
 /*
 ! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com
@@ -548,12 +548,12 @@ video {
   inset: 0px;
 }
 
-.top-1\/2{
-  top: 50%;
-}
-
 .left-1\/2{
   left: 50%;
+}
+
+.top-1\/2{
+  top: 50%;
 }
 
 .z-30{
@@ -660,8 +660,8 @@ video {
   height: 100%;
 }
 
-.h-56{
-  height: 14rem;
+.h-screen{
+  height: 100vh;
 }
 
 .w-1\/2{
@@ -755,6 +755,10 @@ video {
   gap: 0.5rem;
 }
 
+.gap-20{
+  gap: 5rem;
+}
+
 .gap-6{
   gap: 1.5rem;
 }
@@ -830,6 +834,10 @@ video {
 .object-cover{
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.p-7{
+  padding: 1.75rem;
 }
 
 .p-8{
@@ -910,12 +918,24 @@ video {
   text-align: start;
 }
 
-.font-sans{
-  font-family: Montserrat, sans-serif;
+.font-\[\'Inter\'\]{
+  font-family: 'Inter';
+}
+
+.font-\[\'Montserrat\'\]{
+  font-family: 'Montserrat';
 }
 
 .font-serif{
   font-family: Inter, serif;
+}
+
+.font-\[\]{
+  font-family: ;
+}
+
+.font-\[\'\'\]{
+  font-family: '';
 }
 
 .text-3xl{
@@ -1050,10 +1070,6 @@ video {
     display: flex;
   }
 
-  .md\:h-96{
-    height: 24rem;
-  }
-
   .md\:w-9\/12{
     width: 75%;
   }
@@ -1114,16 +1130,16 @@ video {
     min-height: 100vh;
   }
 
-  .lg\:w-10\/12{
-    width: 83.333333%;
-  }
-
   .lg\:w-3\/4{
     width: 75%;
   }
 
   .lg\:w-64{
     width: 16rem;
+  }
+
+  .lg\:w-8\/12{
+    width: 66.666667%;
   }
 
   .lg\:basis-1\/2{
@@ -1155,12 +1171,12 @@ video {
     justify-content: center;
   }
 
-  .lg\:gap-16{
-    gap: 4rem;
-  }
-
   .lg\:gap-4{
     gap: 1rem;
+  }
+
+  .lg\:gap-8{
+    gap: 2rem;
   }
 
   .lg\:py-0{
