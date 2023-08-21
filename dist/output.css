@@ -914,6 +914,10 @@ video {
   text-align: left;
 }
 
+.text-center{
+  text-align: center;
+}
+
 .text-start{
   text-align: start;
 }
@@ -1238,6 +1242,10 @@ video {
 
   .lg\:pt-32{
     padding-top: 8rem;
+  }
+
+  .lg\:text-start{
+    text-align: start;
   }
 
   .lg\:text-4xl{
