@@ -795,6 +795,14 @@ video {
   width: 100%;
 }
 
+.w-\[\]{
+  width: ;
+}
+
+.w-\[100\%\]{
+  width: 100%;
+}
+
 .flex-grow{
   flex-grow: 1;
 }
@@ -864,6 +872,10 @@ video {
 
 .overflow-hidden{
   overflow: hidden;
+}
+
+.overflow-y-hidden{
+  overflow-y: hidden;
 }
 
 .rounded-3xl{

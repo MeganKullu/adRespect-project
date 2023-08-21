@@ -23,7 +23,7 @@ function scrollImage() {
 
   gradientImage.style.display = 'none';
   contentContainer.style.overflowY = 'scroll';
-  contentContainer.style.width = '100%';
+
 
   hiddenImages.forEach(image => {
     image.style.display = 'flex';
@@ -34,9 +34,7 @@ function scrollImage() {
 
 // carousel.js
 const carousel = new Flowbite.Carousel("#default-carousel", {
-  autoplay: true,           // Enable automatic slide transitions
-  interval: 5000,           // Set the interval to a suitable value (in milliseconds)
-  resetTimeoutOnManual: true,
+
 });
 
 const prevButton = document.getElementById("data-carousel-previous");
