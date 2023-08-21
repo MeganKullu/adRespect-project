@@ -17,20 +17,30 @@
     <div class=" ">
         <section class="lg:min-h-screen text-black bg-beige w-full">
             <header
-                class="flex items-center place-content-between bg-white h-16 pl-4 pr-4 lg:pl-20 lg:pr-20 font-['Inter']">
+                class="relative flex items-center place-content-between bg-white h-12 pl-4 pr-4 lg:pl-20 lg:pr-20 font-['Inter']">
                 <div><img src="/img/giarddesign (1).png" alt="logo"></div>
+                <button id="hamburger button" class="md:hidde h-16"><ion-icon name="menu"></ion-icon></button>
+                <nav class="absolute z-50 md:hidden bg-grey w-11/12 h-1/2 font-['Montserrat'] justify-self-center mt-20">
+                    <ul class="text-lg flex-col gap-6 justify-center items-center font-medium bg-grey w-full">
+                        <li class="text-center px-2 py-2"><a class="nav" href="#">Oferta</a></li>
+                        <li class="text-center px-2 py-2"><a class="nav" href="#">O firmie</a></li>
+                        <li class="text-center px-2 py-2"><a class="nav" href="#">Realizacje</a></li>
+                        <li class="text-center px-2 py-2"><a class="nav" href="#">Kontakt</a></li>
+                        <li class="text-center px-2 py-2"><a href="#" class="flex justify-center "><img src="/img/Icon Color.png" alt=""></a></li>
+                    </ul>
+                </nav>
                 <nav class="hidden md:flex">
                     <ul class="text-sm flex gap-6">
                         <li><a class="nav" href="#">Oferta</a></li>
                         <li><a class="nav" href="#">O firmie</a></li>
                         <li><a class="nav" href="#">Realizacje</a></li>
                         <li><a class="nav" href="#">Kontakt</a></li>
-                        <li><img src="/img/Icon Color.png" alt=""></li>
+                        <li><a href="#"><img src="/img/Icon Color.png" alt=""></a></li>
                     </ul>
                 </nav>
             </header>
 
-            <div class="flex bg-beige w-full h-full lg:h-screen">
+            <div class="flex bg-beige w-full h-screen">
                 <div
                     class="w-full lg:basis-1/2 pt-24 flex-col justify-center pl-4 pr-4 lg:flex lg:pl-20 lg:pr-20 lg:pt-0 gap-16">
                     <article class=" text-black flex flex-col justify-center md:items-center">
@@ -64,8 +74,8 @@
                     </article>
                 </div>
 
-                <aside class="realtive hidden lg:flex lg:basis-1/2 h-full lg:h-screen">
-                    <div id="default-carousel" class="relative w-full h-screen" data-carousel="slide">
+                <aside class="realtive hidden lg:flex lg:basis-1/2 h-screen">
+                    <div id="default-carousel" class="relative w-full h-full" data-carousel="slide">
                         <div class="relative h-full overflow-hidden rounded-lg ">
 
                             <div class="hidden duration-700 ease-in-out h-full" data-carousel-item>
@@ -89,10 +99,10 @@
                         </div>
                     </div>
 
-                    <div class="absolute z-50 right-0 bottom-0 max-h-screen">
+                    <div class="absolute z-50 right-0 bottom-0">
                         <div class="bg-white gap-2 w-24 h-12 flex">
-                            <button><img src="/svg/arrow-left-svgrepo-com.svg" alt="arrow left"></button>
-                            <button><img src="/svg/arrow-right-svgrepo-com.svg" alt="arrow right"></button>
+                            <button id="data-carousel-previous" type="button"><img src="/svg/arrow-left-svgrepo-com.svg" alt="arrow left"></button>
+                            <button id="data-carousel-next" type="button"><img src="/svg/arrow-right-svgrepo-com.svg" alt="arrow right"></button>
                         </div>
                     </div>
 
@@ -301,6 +311,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
     <script>
+
         var textWrapper = document.querySelector('.movingtxt');
         textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
@@ -378,6 +389,9 @@
         });
 
     </script>
+
+    <script src="/app.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </body>
 
 </html>
