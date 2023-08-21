@@ -1,17 +1,12 @@
-const previousButton = document.getElementById("data-carousel-previous");
-    const nextButton = document.getElementById("data-carousel-next");
-    const carouselItems = document.querySelectorAll("[data-carousel-item]");
-    let currentItemIndex = 0;
+function toggleMenu() {
+  let navigation = document.querySelector('.mobile'); // Use querySelector to select the first matching element
+  let hamburgerIcon = document.querySelector('#hamburger-button ion-icon');
 
-    previousButton.addEventListener("click", () => {
-        carouselItems[currentItemIndex].classList.add("hidden");
-        currentItemIndex = (currentItemIndex - 1 + carouselItems.length) % carouselItems.length;
-        carouselItems[currentItemIndex].classList.remove("hidden");
-    });
-
-    nextButton.addEventListener("click", () => {
-        carouselItems[currentItemIndex].classList.add("hidden");
-        currentItemIndex = (currentItemIndex + 1) % carouselItems.length;
-        carouselItems[currentItemIndex].classList.remove("hidden");
-    });
-
+  if (navigation.style.display === '' || navigation.style.display === 'none') {
+      navigation.style.display = 'block';
+      hamburgerIcon.setAttribute('name', 'close');
+  } else {
+      navigation.style.display = 'none';
+      hamburgerIcon.setAttribute('name', 'menu');
+  }
+}
