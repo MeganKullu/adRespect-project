@@ -1007,8 +1007,32 @@ video {
   opacity: 0;
 }
 
+.delay-300{
+  transition-delay: 300ms;
+}
+
+.duration-100{
+  transition-duration: 100ms;
+}
+
+.duration-200{
+  transition-duration: 200ms;
+}
+
 .duration-700{
   transition-duration: 700ms;
+}
+
+.duration-300{
+  transition-duration: 300ms;
+}
+
+.duration-500{
+  transition-duration: 500ms;
+}
+
+.duration-75{
+  transition-duration: 75ms;
 }
 
 .ease-in{
