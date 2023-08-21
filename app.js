@@ -1,6 +1,8 @@
+//function to control the mobile hamburger menu
 function toggleMenu() {
-  let navigation = document.querySelector('.mobile'); // Use querySelector to select the first matching element
+  let navigation = document.querySelector('.mobile'); 
   let hamburgerIcon = document.querySelector('#hamburger-button ion-icon');
+
 
   if (navigation.style.display === '' || navigation.style.display === 'none') {
     navigation.style.display = 'block';
@@ -11,6 +13,7 @@ function toggleMenu() {
   }
 }
 
+//function to control the gradient and display all the images upon clicking the button
 function scrollImage() {
 
   const gradientImage = document.querySelector('.gradient');
@@ -20,6 +23,7 @@ function scrollImage() {
 
   gradientImage.style.display = 'none';
   contentContainer.style.overflowY = 'scroll';
+  contentContainer.style.width = '100%';
 
   hiddenImages.forEach(image => {
     image.style.display = 'flex';

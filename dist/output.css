@@ -1051,14 +1051,6 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.underline{
-  text-decoration-line: underline;
-}
-
-.underline-offset-8{
-  text-underline-offset: 8px;
-}
-
 .opacity-0{
   opacity: 0;
 }
@@ -1098,6 +1090,27 @@ video {
 
 .nav:hover::after{
   width: 100%;
+}
+
+.link{
+  position: relative;
+}
+
+.link::after{
+  position: absolute;
+  left: 0px;
+  bottom: -2px;
+  height: 2px;
+  width: 0%;
+  --tw-bg-opacity: 1;
+  background-color: rgb(27 91 49 / var(--tw-bg-opacity));
+  transition-duration: 300ms;
+  --tw-content: '';
+  content: var(--tw-content);
+}
+
+.link:hover::after{
+  width: 80%;
 }
 
 .hover\:border-none:hover{
