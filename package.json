@@ -5,6 +5,7 @@
   "dependencies": {
     "@glidejs/glide": "^3.6.0",
     "@splidejs/splide": "^4.1.4",
+    "animejs": "^3.2.1",
     "flowbite": "^1.8.1",
     "masonry-layout": "^4.2.2",
     "slick-carousel": "^1.8.1"
