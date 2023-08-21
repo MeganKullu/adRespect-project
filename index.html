@@ -77,7 +77,7 @@
                     </article>
                 </div>
 
-                <aside class="realtive hidden h-screen lg:flex lg:basis-1/2">
+                <aside class="realtive hidden max-h-screen lg:flex lg:basis-1/2">
                     <div id="default-carousel" class="relative w-full h-full" data-carousel="slide">
                         <div class="relative h-full overflow-hidden rounded-lg">
 
@@ -102,7 +102,7 @@
                         </div>
                     </div>
 
-                    <div class="absolute z-50 right-0 bottom-0">
+                    <div class="absolute z-50 flex right-0 bottom-0 mt-32">
                         <div class="bg-white gap-2 w-24 h-12 flex">
                             <button id="data-carousel-previous" type="button"><img
                                     src="assets/img/svg/arrow-left-svgrepo-com.svg" alt="arrow left">
@@ -210,20 +210,20 @@
         </section>
 
         <section id="Realizacje"
-            class="bg-beige pt-32 relative overflow-hidden flex flex-col justify-center items-center w-full container">
+            class="bg-beige pt-32 relative overflow-hidden flex flex-col w-full justify-center items-center container">
 
-            <div class="pl-4 pr-4 pb-24 md:w-9/12 lg:pr-0">
+            <div class="pl-4 pr-4 pb-24 md:w-9/12 lg:pr-0 w-full">
                 <h2 class="text-xs text-green mb-4">Realizacje</h2>
                 <h3 class="text-4xl lg:text-5xl font-['Montserrat'] font-medium section">Nasze<span
                         class="italic">&nbsp;projekty</span></h3>
             </div>
 
 
-            <div class="absolute z-30 inset-0 h-full gradient">
+            <div class="absolute z-30 inset-0 h-full gradient w-full">
                 <img src="assets/img/Gradient.png" alt="gradient" class="h-full">
             </div>
 
-            <div class="columns-2 gap-8 section w-full md:columns-2 lg:columns-3">
+            <div class="columns-2 gap-8 section md:columns-2 lg:columns-3 w-full">
 
                 <div><img class="mb-8" src="assets/img/photo2.png" alt="landscape"></div>
 
@@ -241,7 +241,7 @@
 
                 <div class="hidden lg:flex images"><img class="mb-8" src="assets/img/photo7.png" alt="landscape"></div>
 
-                <div class="hidden lg:flex images"><img class="" src="assets/img/photo10.png" alt="landscape"></div>
+                <div class="hidden lg:flex images"><img class="mb-8" src="assets/img/photo10.png" alt="landscape"></div>
             </div>
 
             <div class="absolute z-50 flex justify-center items-center w-full bottom-16">
@@ -261,7 +261,7 @@
                             Znajdziesz nas na <span class="italic font-medium">Instagramie.</span></p>
                     </div>
                     <div
-                        class="flex flex-col justify-center items-center font-['Inter'] section md:items-start md:basis-1/2 lg:basis-1/5 lg:pr-16">
+                        class="flex flex-col mt-4 justify-center items-center font-['Inter'] section md:items-start md:mt-0 md:basis-1/2 lg:basis-1/5 lg:pr-16">
                         <p>Śledź nasze <br> najnowsze realizacje!</p>
                         <button
                             class="bg-white text-green w-32 rounded-3xl py-2 mt-4 hover:bg-black hover:text-white">Instagram
@@ -299,7 +299,7 @@
 
                     </div>
                     <div class="items-center gap-6 mt-8 md:flex lg:mt-0 section">
-                        <p class="mb-4 lg:mb-0">000-000-000</p>
+                        <p class="mb-4 md:mb-0">000-000-000</p>
                         <p>giarddesign@kontakt.pl</p>
                     </div>
                 </div>
@@ -314,7 +314,6 @@
                     </div>
                 </div>
             </div>
-
         </footer>
 
     </div>

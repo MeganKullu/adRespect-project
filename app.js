@@ -30,4 +30,24 @@ function scrollImage() {
 
   expandButton.style.display ='none';
 });
+
+
+// carousel.js
+const carousel = new Flowbite.Carousel("#default-carousel", {
+  autoplay: true,           // Enable automatic slide transitions
+  interval: 5000,           // Set the interval to a suitable value (in milliseconds)
+  resetTimeoutOnManual: true,
+});
+
+const prevButton = document.getElementById("data-carousel-previous");
+const nextButton = document.getElementById("data-carousel-next");
+
+prevButton.addEventListener("click", () => {
+  carousel.prev();
+});
+
+nextButton.addEventListener("click", () => {
+  carousel.next();
+});
+
 }
