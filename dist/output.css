@@ -670,10 +670,6 @@ video {
   margin-top: 2rem;
 }
 
-.ml-6{
-  margin-left: 1.5rem;
-}
-
 .block{
   display: block;
 }
@@ -945,6 +941,10 @@ video {
   padding-left: 1rem;
 }
 
+.pl-6{
+  padding-left: 1.5rem;
+}
+
 .pr-4{
   padding-right: 1rem;
 }
@@ -963,10 +963,6 @@ video {
 
 .pt-32{
   padding-top: 8rem;
-}
-
-.pl-6{
-  padding-left: 1.5rem;
 }
 
 .text-left{
