@@ -10,3 +10,7 @@ function toggleMenu() {
       hamburgerIcon.setAttribute('name', 'menu');
   }
 }
+
+function scrollImage() {
+  
+}
