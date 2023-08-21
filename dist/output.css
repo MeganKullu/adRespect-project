@@ -552,6 +552,10 @@ video {
   bottom: 0px;
 }
 
+.bottom-1{
+  bottom: 0.25rem;
+}
+
 .left-1\/2{
   left: 50%;
 }
@@ -564,16 +568,20 @@ video {
   top: 50%;
 }
 
+.bottom-3{
+  bottom: 0.75rem;
+}
+
+.bottom-16{
+  bottom: 4rem;
+}
+
 .z-30{
   z-index: 30;
 }
 
 .z-50{
   z-index: 50;
-}
-
-.-mt-10{
-  margin-top: -2.5rem;
 }
 
 .mb-10{
@@ -680,6 +688,14 @@ video {
   height: 100vh;
 }
 
+.h-96{
+  height: 24rem;
+}
+
+.h-3\/4{
+  height: 75%;
+}
+
 .w-1\/2{
   width: 50%;
 }
@@ -718,10 +734,6 @@ video {
 
 .w-full{
   width: 100%;
-}
-
-.basis-1\/5{
-  flex-basis: 20%;
 }
 
 .-translate-x-1\/2{
@@ -990,16 +1002,16 @@ video {
   line-height: 1rem;
 }
 
+.font-light{
+  font-weight: 300;
+}
+
 .font-medium{
   font-weight: 500;
 }
 
 .font-normal{
   font-weight: 400;
-}
-
-.font-light{
-  font-weight: 300;
 }
 
 .italic{
@@ -1129,8 +1141,8 @@ video {
     align-items: center;
   }
 
-  .md\:gap-16{
-    gap: 4rem;
+  .md\:gap-12{
+    gap: 3rem;
   }
 
   .md\:gap-2{
@@ -1139,10 +1151,6 @@ video {
 
   .md\:gap-8{
     gap: 2rem;
-  }
-
-  .md\:gap-12{
-    gap: 3rem;
   }
 
   .md\:px-20{
@@ -1209,20 +1217,12 @@ video {
     flex-basis: 50%;
   }
 
-  .lg\:basis-4\/5{
-    flex-basis: 80%;
-  }
-
   .lg\:basis-1\/5{
     flex-basis: 20%;
   }
 
-  .lg\:basis-10\/12{
-    flex-basis: 83.333333%;
-  }
-
-  .lg\:basis-2\/12{
-    flex-basis: 16.666667%;
+  .lg\:basis-4\/5{
+    flex-basis: 80%;
   }
 
   .lg\:columns-3{
@@ -1276,10 +1276,6 @@ video {
     padding-left: 3rem;
   }
 
-  .lg\:pl-16{
-    padding-left: 4rem;
-  }
-
   .lg\:pl-20{
     padding-left: 5rem;
   }
@@ -1316,10 +1312,6 @@ video {
     padding-top: 8rem;
   }
 
-  .lg\:pl-10{
-    padding-left: 2.5rem;
-  }
-
   .lg\:text-left{
     text-align: left;
   }
@@ -1328,9 +1320,9 @@ video {
     text-align: start;
   }
 
-  .lg\:text-4xl{
-    font-size: 2.25rem;
-    line-height: 2.5rem;
+  .lg\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 
   .lg\:text-5xl{
@@ -1346,10 +1338,5 @@ video {
   .lg\:text-base{
     font-size: 1rem;
     line-height: 1.5rem;
-  }
-
-  .lg\:text-3xl{
-    font-size: 1.875rem;
-    line-height: 2.25rem;
   }
 }
