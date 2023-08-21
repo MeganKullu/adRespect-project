@@ -42,7 +42,8 @@
                                     Twojego ogrodu</span>
                             </span>
                         </h1>
-                        <p class="mb-20 font-['Inter'] font-medium">Marka GiardDesign to wieloletnie doświadczenie i
+                        <p class="mb-20 font-['Inter'] font-medium text opacity-0">Marka GiardDesign to wieloletnie
+                            doświadczenie i
                             wysoka
                             estetyka
                             realizacji. Oferujemy kompleksowy zakres usługz indywidualnym podejściem do każdego
@@ -287,7 +288,7 @@
         var textWrapper = document.querySelector('.movingtxt');
         textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
-        anime.timeline({ loop: true })
+        anime.timeline()
             .add({
                 targets: '.movingtxt .letter',
                 scale: [4, 1],
@@ -296,13 +297,16 @@
                 easing: "easeOutExpo",
                 duration: 950,
                 delay: (el, i) => 70 * i
-            }).add({
-                targets: '.movingtxt',
-                opacity: 0,
-                duration: 1000,
-                easing: "easeOutExpo",
-                delay: 1000
-            });
+            })
+
+        let paragraph = document.querySelector(".text");
+
+        anime({
+            targets: paragraph,
+            opacity: 1,        // Target opacity (full opacity)
+            duration: 2000,    // Animation duration in milliseconds
+            easing: "easeInCubic" // Easing function for a smooth ease-in effect
+        });
     </script>
 
 
