@@ -20,27 +20,27 @@
                 class="relative flex items-center place-content-between bg-white h-12 pl-4 pr-4 lg:pl-20 lg:pr-20 font-['Inter']">
                 <div><img src="/img/giarddesign (1).png" alt="logo"></div>
                 <button id="hamburger-button" class="md:hidden h-16" onclick="toggleMenu()"><ion-icon name="menu"></ion-icon></button>
-                <nav class="mobile absolute z-50 md:hidden bg-grey w-11/12 h-1/2 font-['Montserrat'] justify-self-center mt-20">
+                <nav class=" mobile absolute z-50 hidden md:hidden bg-grey w-11/12 h-1/2 font-['Montserrat'] justify-self-center mt-20">
                     <ul class="text-lg flex-col gap-6 justify-center items-center font-medium bg-grey w-full">
-                        <li class="text-center px-2 py-2"><a class="nav" href="#">Oferta</a></li>
-                        <li class="text-center px-2 py-2"><a class="nav" href="#">O firmie</a></li>
-                        <li class="text-center px-2 py-2"><a class="nav" href="#">Realizacje</a></li>
-                        <li class="text-center px-2 py-2"><a class="nav" href="#">Kontakt</a></li>
+                        <li class="text-center px-2 py-2"><a class="nav" href="#Oferta">Oferta</a></li>
+                        <li class="text-center px-2 py-2"><a class="nav" href="#O-firmie">O firmie</a></li>
+                        <li class="text-center px-2 py-2"><a class="nav" href="#Realizacje">Realizacje</a></li>
+                        <li class="text-center px-2 py-2"><a class="nav" href="#Kontakt">Kontakt</a></li>
                         <li class="text-center px-2 py-2"><a href="#" class="flex justify-center "><img src="/img/Icon Color.png" alt=""></a></li>
                     </ul>
                 </nav>
                 <nav class="hidden md:flex">
                     <ul class="text-sm flex gap-6">
-                        <li><a class="nav" href="#">Oferta</a></li>
-                        <li><a class="nav" href="#">O firmie</a></li>
-                        <li><a class="nav" href="#">Realizacje</a></li>
-                        <li><a class="nav" href="#">Kontakt</a></li>
-                        <li><a href="#"><img src="/img/Icon Color.png" alt=""></a></li>
+                        <li><a class="nav" href="#Oferta">Oferta</a></li>
+                        <li><a class="nav" href="#O-firmie">O firmie</a></li>
+                        <li><a class="nav" href="#Realizacje">Realizacje</a></li>
+                        <li><a class="nav" href="#Kontakt">Kontakt</a></li>
+                        <li><a href="#"><img src="/img/Icon Color.png" alt="search icon"></a></li>
                     </ul>
                 </nav>
             </header>
 
-            <div class="flex bg-beige w-full h-screen">
+            <div class="flex bg-beige w-full lg:h-screen">
                 <div
                     class="w-full lg:basis-1/2 pt-24 flex-col justify-center pl-4 pr-4 lg:flex lg:pl-20 lg:pr-20 lg:pt-0 gap-16">
                     <article class=" text-black flex flex-col justify-center md:items-center">
@@ -111,7 +111,7 @@
             </div>
         </section>
 
-        <section class="bg-grey w-full pt-20 lg:pt-32 pb-20 lg:pb-44">
+        <section id="Oferta" class="bg-grey w-full pt-20 lg:pt-32 pb-20 lg:pb-44">
             <article class="flex justify-center items-center w-full ">
                 <div class="mb-24 flex flex-col md:w-9/12 pl-4 lg:pl-0 pr-4 lg:pr-0 ">
                     <p class="text-green text-xs mb-3 w-full lg:w-3/4">Oferta</p>
@@ -175,7 +175,7 @@
             </aside>
         </section>
 
-        <section class="bg-green flex gap-16 ">
+        <section id="O-firmie" class="bg-green flex gap-16 ">
             <aside class="hidden md:flex lg:basis-1/2">
                 <img src="/img/landscape.png" alt="landscape" class="object-cover">
             </aside>
@@ -201,7 +201,7 @@
             </div>
         </section>
 
-        <section class="bg-beige pt-32 relative overflow-hidden flex flex-col justify-center items-center w-full">
+        <section id="Realizacje" class="bg-beige pt-32 relative overflow-hidden flex flex-col justify-center items-center w-full">
 
             <div class="pl-4 md:w-9/12 pr-4 lg:pr-0 pb-24">
                 <p class="text-xs text-green mb-4">Realizacje</p>
@@ -263,7 +263,7 @@
         </section>
 
         <footer
-            class="pt-20 pb-20 lg:pt-28 lg:pb-28 bg-black w-full text-white flex justify-center items-center font-['Inter']">
+           id="Kontakt" class="pt-20 pb-20 lg:pt-28 lg:pb-28 bg-black w-full text-white flex justify-center items-center font-['Inter']">
             <div class="w-9/12">
                 <div class="md:flex place-content-between items-center pb-16 border-b border-white">
                     <div class="logo section"><img src="/img/giarddesign.png" alt="logo"></div>
