@@ -14,7 +14,7 @@ This is a solution to the adRespect Task.
 
 ### Screenshot
 
-![Screenshot](./img/screenshot.png)
+![Screenshot](.assets/img/screenshot.png)
 
 
 ### Links
