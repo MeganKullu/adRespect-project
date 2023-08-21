@@ -51,11 +51,11 @@
 
                         <div class="flex gap-2 lg:gap-8 mb-20 font-['Inter']">
                             <button
-                                class="text-white text-xs md:text-sm lg:text-base border bg-green rounded-full w-52 lg:w-64 h-12 hover:bg-grey hover:text-green">Skontaktuj
+                                class="button1 text-white text-xs md:text-sm lg:text-base border bg-green rounded-full w-52 lg:w-64 h-12 hover:bg-grey hover:text-green">Skontaktuj
                                 się z
                                 nami</button>
                             <button
-                                class="text-green border text-xs md:text-sm lg:text-base border-green rounded-full w-56 lg:w-64 h-12 flex justify-center items-center gap-2 md:gap-2 hover:bg-grey hover:text-green">Zobacz
+                                class="button1 text-green border text-xs md:text-sm lg:text-base border-green rounded-full w-56 lg:w-64 h-12 flex justify-center items-center gap-2 md:gap-2 hover:bg-grey hover:text-green">Zobacz
                                 nasze
                                 realizacje <img src="/img/arrow-down.png" alt="arrow down"></button>
                         </div>
@@ -304,9 +304,24 @@
         anime({
             targets: paragraph,
             opacity: 1,        // Target opacity (full opacity)
-            duration: 2000,    // Animation duration in milliseconds
+            duration: 2500,    // Animation duration in milliseconds
             easing: "easeInCubic" // Easing function for a smooth ease-in effect
         });
+
+        let button1 = document.querySelectorAll(".button1");
+        
+        anime.timeline()
+            .add({
+                targets: button1,
+                scale: [0.2, 1.0],  // Start from a small scale and then bounce to a larger scale
+                duration: 3500,      // Animation duration in milliseconds
+                easing: "easeOutCubic", // Easing function for the bounce effect
+            }).add({
+                targets: button1,
+                scale: 1,           // Reset scale to 1 (original size)
+                duration: 3000       // Animation duration for the scale reset
+            })
+            
     </script>
 
 
