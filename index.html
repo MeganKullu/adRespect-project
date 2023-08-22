@@ -81,19 +81,19 @@
                     <div id="default-carousel" class="relative w-full h-full" data-carousel="slide">
                         <div class="relative h-full overflow-hidden rounded-lg">
 
-                            <div class="hidden duration-700 ease-in-out h-full" data-carousel-item>
+                            <div class="hidden duration-700 ease-in-out h-full" data-carousel-item id="c-item-1">
                                 <img src="assets/img/main-image.jpg"
                                     class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-cover"
                                     alt="image">
                             </div>
 
-                            <div class="hidden duration-700 ease-in-out h-full" data-carousel-item>
+                            <div class="hidden duration-700 ease-in-out h-full" data-carousel-item id="c-item-2">
                                 <img src="assets/img/photo2.png"
                                     class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-cover"
                                     alt="image">
                             </div>
 
-                            <div class="hidden duration-700 ease-in-out h-full" data-carousel-item>
+                            <div class="hidden duration-700 ease-in-out h-full" data-carousel-item id="c-item-3">
                                 <img src="assets/img/photo3.png"
                                     class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-cover"
                                     alt="image">
@@ -248,8 +248,8 @@
                     class="expandButton px-8 py-2 rounded-full border border-black text-black flex justify-center items-center gap-2 font-serif hover:bg-grey">Rozwiń
                     <img src="assets/img/arrow-down-black.png" alt="arrow down">
                 </button>
-            </div>    
-        </section>      
+            </div>
+        </section>
 
         <section class="bg-grey z-50 flex justify-center items-center w-full py-16">
             <div class=" bg-green h-80 w-11/12 text-white lg:flex justify-center items-center md:w-9/12 ">
@@ -319,6 +319,39 @@
 
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+    
+    <script>
+        const carousel = new Carousel([
+                {
+                    position: 0,
+                    el: document.getElementById('c-item-1')
+                },
+                {
+                    position: 1,
+                    el: document.getElementById('c-item-2')
+                },
+                {
+                    position: 2,
+                    el: document.getElementById('c-item-3')
+                },
+            ], 
+            {
+                defaultPosition: 0,
+                transitionSpeed: 4000,
+            });
+
+        const prevButton = document.getElementById("data-carousel-previous");
+        const nextButton = document.getElementById("data-carousel-next");
+
+        prevButton.addEventListener("click", () => {
+            carousel.prev();
+        });
+
+        nextButton.addEventListener("click", () => {
+            carousel.next();
+        });
+
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
     <script>
 

@@ -32,20 +32,4 @@ function scrollImage() {
 });
 
 
-// carousel.js
-const carousel = new Flowbite.Carousel("#default-carousel", {
-
-});
-
-const prevButton = document.getElementById("data-carousel-previous");
-const nextButton = document.getElementById("data-carousel-next");
-
-prevButton.addEventListener("click", () => {
-  carousel.prev();
-});
-
-nextButton.addEventListener("click", () => {
-  carousel.next();
-});
-
 }
