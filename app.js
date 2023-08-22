@@ -19,7 +19,7 @@ function scrollImage() {
   const gradientImage = document.querySelector('.gradient');
   const contentContainer = document.querySelector('.container');
   const hiddenImages = document.querySelectorAll('.images');
-  const expandButton = document.querySelector('.expandButton')
+  const expandButton = document.querySelector('.expandButton');
 
   gradientImage.style.display = 'none';
   contentContainer.style.overflowY = 'scroll';
